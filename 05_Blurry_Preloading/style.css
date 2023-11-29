@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Love Ya Like A Sister', cursive;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    margin-left: 5rem;
+    overflow: hidden;
+}
+.bg{
+    background: url("img/fish.jpg")  no-repeat center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100vw ;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(0px);
+    display: flex;
+    align-items: center;
+}
+.loading-text{
+    color:#AD0201;
+    font-size: 100px;
+    margin-left: 10%;
+}
