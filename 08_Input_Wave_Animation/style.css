@@ -1,0 +1,97 @@
+:root{
+    --primary-bg:#EDEEF7;
+    --secondary-bg:#E4FBFF;
+    --primary-text:#7868E6;
+    --secondary-text:#B8B5FF;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    height:100vh;
+    background-color: var(--primary-bg);
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    background-color: var(--secondary-bg);
+    padding: 3rem 5rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px var(--secondary-bg);
+}
+.container h1{
+    color:var(--primary-text);
+    text-align:center;
+    font-size: 2.5rem;
+    margin-bottom:2rem;
+}
+.container a{
+    text-decoration: none;
+    color: var(--primary-text);
+}
+.container a:hover{
+    text-shadow: 1px 1px 5px var(--primary-text);
+}
+.form-control{
+    position:relative;
+    margin: 1rem 0;
+}
+input{
+    font-size: 1rem;
+    padding:0.7rem 0;
+    border: none;
+    background-color: inherit;
+    border-bottom: 2px solid var(--secondary-text);
+    color: var(--primary-text);
+    margin-right:1rem ;
+    width: 100%;
+    display: block;
+}
+input:focus{
+    outline: none;
+    border-color: var(--primary-text);
+}
+label{
+    color: var(--secondary-text);
+}
+.form-control label{
+    position: absolute;
+    top: 7px;
+    left: 0;
+}
+p{
+    color: var(--secondary-text);
+    font-size: 0.8rem;
+}
+button{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: 2px solid var(--primary-text);
+    background-color: var(--primary-text);
+    color: var(--secondary-bg);
+    border-radius: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--secondary-bg);
+    color: var(--primary-text);
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.form-control label span{
+    display: inline-block;
+    font-size: 1rem;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.7,-0.6,0.3,1.55);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+    color: var(--primary-text);
+    transform: translateY(-20px);
+}
