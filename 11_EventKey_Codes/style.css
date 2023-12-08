@@ -1,0 +1,26 @@
+:root{
+    --bg-color:#AEC3AE;
+    --bg-secondary:#E4E4D0;
+    --text-color:#94A684;
+}
+*{
+    margin: 0;
+    padding: 0;
+    background-origin: border-box;
+}
+body{
+    font-family: 'Source Code Pro', monospace;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.key{
+    border: 2px solid var(--text-color);
+    background-color: var(--bg-secondary);
+    box-shadow:1px 1px 3px rgba(0,0,0,0.1);
+    display: inline-flex;
+    align-items: center;
+}
