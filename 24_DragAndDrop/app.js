@@ -12,10 +12,10 @@ fill.addEventListener("dragend",dragEnd);
 function dragEnd() {
     this.className = "fill"
 }
-for(const empty of empties){
+for (const empty of empties){
     empty.addEventListener("dragover",dragOver)
-    empty.addEventListener("dragleave",dragLeave)
     empty.addEventListener("dragenter",dragEnter)
+    empty.addEventListener("dragleave",dragLeave)
     empty.addEventListener("drop",dragDrop)
 }
 
@@ -23,13 +23,13 @@ function dragOver(e) {
     e.preventDefault();
 }
 
-function dragLeave() {
-    this.className = "empty"
-}
-
 function dragEnter(e) {
     e.preventDefault();
-    this.className += "hover"
+    this.className += " hover"
+}
+
+function dragLeave() {
+    this.className = "empty"
 }
 
 function dragDrop() {
