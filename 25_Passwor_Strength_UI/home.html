@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer"/>
+
+    <!-- Local Css -->
+    <link rel="stylesheet" href="css.css">
+
+    <title>Password Strength UI</title>
+</head>
+<body>
+    <div id="background" class="background">
+
+    </div>
+    <div class="bg-white rounded p-10 text-center shadow-md">
+        <h1 class="text-lg font-bold text-red-600">Sign Up</h1>
+        <p class="text-sm text-gray-800">Looks like you don't have an account. Let's create a new account for <span class="font-bold text-red-500">enskerti@gmail.com</span>.</p>
+        <div class="my-4 text-left">
+            <label id="emailLabel" for="email" class="text-gray-900 block w-full p-2 rounded">Email:</label>
+            <input id="email" type="text" class="border w-full p-2 mt-2 rounded" placeholder="Please enter Email..." required>
+        </div>
+        <div class="my-4 text-left">
+            <label id="passwordLabel" for="password" class="text-gray-900 block w-full p-2 rounded">Password:</label>
+            <input id="password" type="password" class="border w-full p-2 mt-2 rounded" placeholder="Please enter Password..." required>
+        </div>
+        <button class="bg-red-800 text-white py-2 mt-2 inline-block w-full rounded" type="submit">Continue</button>
+    </div>
+    <!-- Local Js -->
+    <script src="app.js"></script>
+</body>
+</html>
