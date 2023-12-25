@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+img{
+    width: 700px;
+    height: auto;
+}
+.carousel{
+    box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 5px;
+    height:500px;
+    width: 700px;
+    overflow: hidden;
+    border: 3px solid navy;
+    border-bottom: none;
+    border-radius:10px 10px 0 0 ;
+}
+.image-container{
+    display: flex;
+    transform: translateX(0px);
+    transition: transform 0.5s ease-in-out;
+}
+.buttons-container{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    width: 49.5%;
+    border: none;
+    background-color: navy;
+    color: aliceblue;
+    font-family: inherit;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.button:hover{
+    opacity: 0.9;
+}
+.button:focus{
+    outline: none;
+}
