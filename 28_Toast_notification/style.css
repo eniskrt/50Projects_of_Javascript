@@ -44,3 +44,24 @@ button:active{
     border-radius: 1rem;
     color: #fff;
 }
+.notif.red{
+    background-color: red;
+}
+.notif.blue{
+    background-color: blue;
+}
+.notif.green{
+    background-color: green;
+}
+.notif.purple{
+    background-color: purple;
+}
+.notif.black{
+    background-color: black;
+}
+.notif.gray{
+    background-color: gray;
+}
+.notif.orange{
+    background-color: orange;
+}
