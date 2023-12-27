@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #FAE7F3;
+}
+button{
+    background-color: #7360DF;
+    font-family: inherit;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.button{
+    outline: none;
+}
+.circle{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background-color: #C499F3;
+    left: 2.5rem;
+    top: 0;
+    border-radius: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    animation:  scale 0.5s ease-out;
+}
+@keyframes scale{
+    to{
+        transform: translate(-50%,-50%) scale(3);
+        opacity: 0;
+    }
+}
