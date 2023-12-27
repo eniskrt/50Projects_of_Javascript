@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.button{
+    background-color: tomato;
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: inherit;
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+button:active{
+    transform: scale(0.95);
+}
+.notifContainer{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.notif{
+    background-color: rebeccapurple;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    color: #fff;
+}
