@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #141E46;
+}
+.container{
+    background-color: #C70039;
+    color: #FFF5E0;
+    border-radius: 1rem;
+    padding: 3rem 5rem;
+    margin: 20px auto;
+    max-width: 35rem;
+    position: relative;
+}
+.fa-quote{
+    color: rgba(255, 245, 224, 0.4);
+    font-size: 1.5rem;
+    position: absolute;
+}
+.fa-quote-right{
+    top: 50px;
+    left: 40px;
+}
+.fa-quote-left{
+    bottom: 120px;
+    right: 50px;
+}
+.user{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-text{
+    line-height: 1.5rem;
+    text-align: justify;
+}
+.user-img{
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    margin-right: 1rem;
+    object-fit: cover;
+}
+.user-details .user-name{
+    margin: 0;
+}
+.user-details .job{
+    margin: 10px 0;
+}
+.progress-bar{
+    height: 4px;
+    width: 100%;
+    background-color: #FFF5E0;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    animation: grow 10s linear infinite;
+    transform-origin:left ;
+}
+@keyframes grow{
+    0%{
+        transform: scale(0);
+    }
+}
+
+@media(max-width:35rem){
+    .container{
+        padding: 2rem 3rem;
+    }
+    .fa-quote{
+        display: none;
+    }
+}
