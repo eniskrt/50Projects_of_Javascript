@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-color: #FBF9F1;
+}
+.panel-container{
+    background-color: #fff;
+    box-shadow: 0 6px 12px -2px rgba(50, 50, 95, 0.25),0 3px 7px -3px rgba(0, 0, 5, 0.3);
+    font-size: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    max-width: 500px;
+}
+.panel-container strong{
+    line-height: 2rem;
+}
+.ratings-container{
+    display: flex;
+    margin: 1rem 0;
+}
+.rating{
+    cursor: pointer;
+    margin: 1rem;
+}
+.rating p{
+    margin: 0;
+    font-size: 6rem;
+    transition: transform 0.5s ease;
+}
+.rating small{
+    font-weight: bold;
+    color: #555;
+    transition: color 0.5s ease;
+}
+.rating:hover small,
+.rating.active small{
+    color: #111;
+}
+.rating:hover p,
+.rating.active p{
+    transform: scale(1.15);
+}
+.btn{
+    background-color:#FFC83E;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 100%;
+    letter-spacing: 2px;
+    border-radius: 2rem;
+    border: none;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.btn:active{
+    transform: scale(0.97);
+}
+.btn:focus{
+    outline: none;
+}
