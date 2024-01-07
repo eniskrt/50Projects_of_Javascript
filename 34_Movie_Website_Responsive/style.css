@@ -52,20 +52,23 @@ input.search:focus{
 }
 .card .overview{
     position:absolute;
-    top:1000px;
-    transition:all 0.4s linear;
-    background-color: #394872;
-    height: 100%;
+    bottom:-1000px;
+    transition:all 0.5s linear;
+    background-color: rgba(57, 72, 114,0.9);
+    max-height: 100%;
 }
 .card .overview h3 {
-    border-bottom: 1px solid var(--color1);
-    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color2);
+    padding: 0.5rem 0.5rem 1rem 1rem;
+    color: var(--color3);
 }
 .card .overview p{
     padding: 0.7rem;
+    color: var(--color4);
 }
 .card:hover .overview{
-    top: 0;
+    bottom: 0;
+    overflow-y: auto;
 }
 h5.card-title{
     color: var(--color3);
